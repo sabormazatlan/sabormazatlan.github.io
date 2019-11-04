@@ -1,0 +1,123 @@
+// Global styling for this template
+body {
+  overflow-x: hidden;
+  @include body-font;
+}
+
+@media (max-width: 700px) {
+  .map {
+    width: 290px;
+  }
+
+  #logo {
+    width: 200px;
+    transition: 200ms;
+  }
+}
+
+@media (min-width: 700px) {
+  .map {
+    width: 600px;
+  }
+
+  #logo {
+    width: 300px;
+    transition: 200ms;
+  }
+}
+
+#logo.scrolled {
+  width: 75px;
+  transition: 200ms;
+}
+
+p {
+  line-height: 1.75;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.text-muted {
+  margin-bottom: 0px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  @include heading-font;
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+// Parallax
+.parallax-container {
+  position: relative;
+  height: 100vh;
+}
+
+.parallax {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.second {
+  margin-top: -500px;
+}
+
+.darken {
+  filter: brightness(70%);
+}
+
+.content {
+  background: #fff;
+  padding: 40px 0;
+  justify-content: center;
+  text-align: center;
+  //min-height: 655px;
+}
+
+hr {
+  padding: 2px 0 2px 0;
+  width: 114px;
+  margin: 20px auto 50px auto;
+  background-color: $primary;
+}
+
+.img-container {
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.img-container img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}

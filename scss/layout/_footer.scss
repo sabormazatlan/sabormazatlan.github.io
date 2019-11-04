@@ -1,0 +1,35 @@
+// Styling for the footer
+.footer {
+  background-color: $secondary;
+  padding: 25px 0;
+  text-align: center;
+  color: #fff;
+  h4{
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      @media #{$small_mobile}{
+          margin-bottom: 15px;
+      }
+      @media #{$large_mobile}{
+          margin-bottom: 15px;
+      }
+      @media #{$tab_device}{
+          margin-bottom: 15px;
+      }
+      @media #{$medium_device}{
+      
+      }
+  }
+  p{
+      margin-bottom: 4px;
+      font-size: 14px;
+      padding-left: 10px;
+  }
+  a{
+      img{
+        height: 50px;
+        margin-bottom: 20px;
+      }
+  }
+}

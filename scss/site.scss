@@ -1,0 +1,15 @@
+// Core variables and mixins
+@import "base/variables.scss";
+@import "base/mixins.scss";
+
+// Global CSS
+@import "base/page.scss";
+
+// Components
+@import "components/buttons.scss";
+@import "components/navbar.scss";
+
+// Layout
+@import "layout/contact.scss";
+@import "layout/menu.scss";
+@import "layout/footer.scss";
